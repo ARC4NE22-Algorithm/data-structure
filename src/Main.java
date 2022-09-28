@@ -1,3 +1,5 @@
+import tree.Trie;
+
 public class Main {
     public static void stackTest() {
         // Test Stack
@@ -29,20 +31,31 @@ public class Main {
         dSet.union(0, 2);
         dSet.dump(DisjointSet.DumpType.ALL);
 
-        for(int i = 0; i < dSet.size(); i++) {
+        for (int i = 0; i < dSet.size(); i++) {
             System.out.println(dSet.find(i));
         }
         dSet.dump(DisjointSet.DumpType.ALL);
 
-        for(int i = 0; i < dSet.size(); i++) {
+        for (int i = 0; i < dSet.size(); i++) {
             System.out.println(dSet.find2(i));
         }
         dSet.dump(DisjointSet.DumpType.ALL);
     }
 
+    public static void trieTest() {
+        Trie root = new Trie(true);
+        root.add("abc");
+        root.add("abd");
+        root.add("bcde");
+        System.out.println(root.contains("abc"));
+        System.out.println(root.contains("abcd"));
+        root.printAll("");
+    }
+
     public static void main(String[] args) {
-        stackTest();
-        queueTest();
-        disjointSetTest();
+//        stackTest();
+//        queueTest();
+//        disjointSetTest();
+//        trieTest();
     }
 }

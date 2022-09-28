@@ -1,3 +1,5 @@
+package tree;
+
 class IndexedTree {
     private long[] nodes;
     private int S;
