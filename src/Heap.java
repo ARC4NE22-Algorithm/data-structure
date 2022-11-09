@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Comparator;
 
-class Heap<E> {
+public class Heap<E> {
     private static final int DEFAULT_CAPACITY = 16;
     private final Comparator comparator;
 

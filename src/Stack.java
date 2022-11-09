@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Stack<E> {
+public class Stack<E> {
     private final int DEFAULT_CAPACITY = 24;
     private int size;
     private int maxCapacity;

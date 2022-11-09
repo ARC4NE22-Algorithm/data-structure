@@ -52,10 +52,26 @@ public class Main {
         root.printAll("");
     }
 
+    public static void twoStackQueueTest() {
+        TwoStackQueue<Integer> tsQueue = new TwoStackQueue<>();
+        for (int i = 1; i < 10; i += 2) {
+            tsQueue.enqueue(i);
+        }
+
+        for (int i = 10; i > 0; i -= 2) {
+            tsQueue.enqueue(i);
+        }
+
+        while (!tsQueue.isEmpty()) {
+            System.out.println(tsQueue.dequeue());
+        }
+    }
+
     public static void main(String[] args) {
 //        stackTest();
 //        queueTest();
 //        disjointSetTest();
 //        trieTest();
+//        twoStackQueueTest();
     }
 }

@@ -1,4 +1,4 @@
-class Deque<E> {
+public class Deque<E> {
     private boolean isReversed;  // false: forward, true: backward
 
     /**

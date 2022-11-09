@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class DisjointSet {
+public class DisjointSet {
     private int[] parents;
     private int[] ranks;
     private int[] nodeCounts;

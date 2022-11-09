@@ -1,4 +1,4 @@
-class Queue<E> {
+public class Queue<E> {
     /**
      * Inner class Node
      * @param <E>
